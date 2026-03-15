@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Peluquería canina y veterinaria de lujo. Cuidado experto para el bienestar de tu mascota.">
+    <title>Pet Company | Grooming & Vet Spa</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container header-container">
+            <!-- Logo Custom HTML -->
+            <a href="#" class="custom-logo">
+                <div class="logo-oval">
+                    <span class="logo-pet">pet</span>
+                    <span class="logo-company">company</span>
+                </div>
+                <div class="logo-icons">
+                    <i class="fa-solid fa-cat"></i>
+                    <i class="fa-solid fa-dog"></i>
+                </div>
+                <span class="logo-text-bottom">GROOMING - VET</span>
+            </a>
+            
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#services" class="nav-link">Servicios</a></li>
+                    <li><a href="#spa" class="nav-link">El Spa</a></li>
+                    <li><a href="#info" class="nav-link">Horarios y Citas</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="https://wa.me/51933867670" target="_blank" class="btn btn-primary btn-small desktop-only">
+                    <i class="fa-brands fa-whatsapp"></i> Reservar Cita
+                </a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero-section" id="home">
+            <div class="hero-bg">
+                <img src="assets/hero_grooming_spa_no_text_1773301922402.png" alt="Peluquera canina profesional cortando pelo a Bichón Frisé" fetchpriority="high">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <h1 class="hero-title">Cuidado compasivo<br>y experto para tu<br>mejor amigo</h1>
+                    <p class="hero-subtitle">Ofrecemos servicios veterinarios de última generación en un entorno libre de estrés para las mascotas de nuestra comunidad.</p>
+                    <div class="hero-btns">
+                        <a href="https://wa.me/51933867670" target="_blank" class="btn btn-primary">
+                            <i class="fa-brands fa-whatsapp"></i> Reservar Cita
+                        </a>
+                        <a href="#services" class="btn-text smooth-scroll">Nuestros Servicios</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT US SECTION -->
+        <section class="about-section section-padding" id="about">
+            <div class="container about-container">
+                <div class="about-gallery reveal fade-up">
+                    <img src="assets/nosotros_img_final.png" alt="Peluquero canino cortando el pelo a un perrito" class="about-img main-img">
+                </div>
+                <div class="about-content reveal fade-up" style="transition-delay: 0.2s">
+                    <h2 class="section-title cursive-title">Nosotros</h2>
+                    <h3 class="about-subtitle">Excelencia y Amor en el Cuidado de tu Mascota</h3>
+                    <p class="about-desc">En <strong>Pet Company</strong>, entendemos que tu mascota es parte fundamental de tu familia. Por eso, hemos creado un espacio único donde la alta peluquería canina y la medicina veterinaria de primer nivel convergen para brindar una experiencia inigualable.</p>
+                    <p class="about-desc">Nuestra misión es garantizar el bienestar integral de cada huésped que nos visita. Con un equipo de profesionales apasionados y especialistas altamente calificados, combinamos técnicas de <em>grooming</em> a la vanguardia con una atención veterinaria compasiva, en un ambiente diseñado especialmente para ser relajante y libre de estrés.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-heart"></i></div>
+                            <span>Atención Libre de Estrés</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-medal"></i></div>
+                            <span>Estilistas y Veterinarios Expertos</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
+                            <span>Productos Premium</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="services section-padding alternate-bg" id="services">
+            <div class="container services-container">
+                <div class="section-header center reveal fade-up">
+                    <h2 class="section-title cursive-title">Nuestros Servicios</h2>
+                    <p class="section-intro">Descubre nuestra propuesta integral de estética y salud para consentir a tu mascota.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal fade-up border-pink">
+                        <div class="service-icon-wrapper"><i class="fa-solid fa-bath service-icon"></i></div>
+                        <h3 class="service-title">Baños</h3>
+                        <p class="service-desc">Relajantes baños con productos premium para cuidar la piel y el pelaje.</p>
+                    </div>
+                    <div class="service-card reveal fade-up border-pink" style="transition-delay: 0.1s">
+                        <div class="service-icon-wrapper"><i class="fa-solid fa-scissors service-icon"></i></div>
+                        <h3 class="service-title">Corte de estilo</h3>
+                        <p class="service-desc">Cortes profesionales a tijera y máquina adaptados a la raza y preferencias.</p>
+                    </div>
+                    <div class="service-card reveal fade-up border-pink" style="transition-delay: 0.2s">
+                        <div class="service-icon-wrapper"><i class="fa-solid fa-hand-sparkles service-icon"></i></div>
+                        <h3 class="service-title">Limpieza de oidos</h3>
+                        <p class="service-desc">Higiene preventiva delicada y sin dolor para su bienestar continuo.</p>
+                    </div>
+                    <div class="service-card reveal fade-up border-pink" style="transition-delay: 0.3s">
+                        <div class="service-icon-wrapper"><i class="fa-solid fa-paw service-icon"></i></div>
+                        <h3 class="service-title">Sesión de stripping</h3>
+                        <p class="service-desc">Renovación meticulosa del manto para razas de pelo duro.</p>
+                    </div>
+                    <div class="service-card reveal fade-up border-pink" style="transition-delay: 0.4s">
+                        <div class="service-icon-wrapper"><i class="fa-solid fa-house-chimney service-icon"></i></div>
+                        <h3 class="service-title">Full spa</h3>
+                        <p class="service-desc">El paquete de relajación y estética definitivo con atención de boutique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPA & GALLERY BOUTIQUE -->
+        <section class="spa-section section-padding" id="spa">
+            <div class="container spa-container">
+                <div class="spa-content reveal fade-up">
+                    <h2 class="section-title cursive-title">Una Experiencia de Boutique Spa</h2>
+                    <p class="spa-desc">Cada detalle en nuestro salón está diseñado para inspirar calma y confianza. Nuestro equipo de groomers y veterinarios aplica un cuidado cariñoso y preciso para que cada mascota regrese a casa viéndose y sintiéndose espectacular.</p>
+                    <a href="#info" class="btn btn-outline">Contáctanos</a>
+                </div>
+                <div class="spa-gallery">
+                    <img src="assets/spa_bath_1773301480074.png" alt="Cute dog in bubble bath" class="spa-img main-img reveal fade-up">
+                </div>
+            </div>
+        </section>
+
+        <!-- INFO & SCHEDULE SECTION -->
+        <section class="info-section section-padding alternate-bg" id="info">
+            <div class="container info-container">
+                <div class="info-content reveal fade-up">
+                    <h2 class="section-title cursive-title">Visítanos</h2>
+                    <p class="info-desc">Tu mascota merece lo mejor. Programa una sesión y déjanos brindarle el máximo nivel de cuidado en peluquería y veterinaria.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Ubicación</strong>
+                                <p>C. Alexander Fleming 123<br>Santiago de Surco 15038</p>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/51933867670" target="_blank" class="contact-item" style="text-decoration:none; color:inherit;">
+                            <i class="fa-brands fa-whatsapp" style="font-size: 24px; color: #25D366;"></i>
+                            <div>
+                                <strong>Llámenos o Escríbenos</strong>
+                                <p>WhatsApp: +51 933867670</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="schedule-box reveal fade-up" style="transition-delay: 0.2s">
+                    <h3 class="schedule-title"><i class="fa-regular fa-clock"></i> Horarios de Atención</h3>
+                    <ul class="schedule-list">
+                        <li><span>Lunes</span> <span>9:30 AM–6 PM</span></li>
+                        <li><span>Martes</span> <span>9:30 AM–6 PM</span></li>
+                        <li><span>Miércoles</span> <span>9:30 AM–6 PM</span></li>
+                        <li><span>Jueves</span> <span>9:30 AM–6 PM</span></li>
+                        <li><span>Viernes</span> <span>9:30 AM–6 PM</span></li>
+                        <li><span>Sábado</span> <span>9:30 AM–6 PM</span></li>
+                        <li class="closed"><span>Domingo</span> <span>Cerrado</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <!-- Columna 1: Logo, Descripción y Redes Sociales -->
+            <div class="footer-col brand-col">
+                <a href="#" class="custom-logo custom-logo-footer" style="align-items: flex-start;">
+                    <div class="logo-oval">
+                        <span class="logo-pet">pet</span>
+                        <span class="logo-company">company</span>
+                    </div>
+                </a>
+                <p class="footer-desc" style="margin-top: 20px;">Alta peluquería canina y veterinaria de lujo. Profesionales dedicados al bienestar integral de tu mascota.</p>
+            </div>
+            
+            <!-- Columna 2: Enlaces Rápidos -->
+            <div class="footer-col links-col">
+                <h4 class="footer-heading">Enlaces Rápidos</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#spa">Nuestro Equipo</a></li>
+                    <li><a href="#info">Horarios</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Contáctanos -->
+            <div class="footer-col contact-col">
+                <h4 class="footer-heading">Contáctanos</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>C. Alexander Fleming 123,<br>Santiago de Surco 15038</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+51 933867670</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>petcompanyperu@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2024 Pet Company. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="mobile-sticky-cta" id="mobile-sticky-cta">
+        <a href="https://wa.me/51933867670" target="_blank" class="btn btn-primary btn-block">
+            <i class="fa-brands fa-whatsapp"></i> Agendar Cita
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
