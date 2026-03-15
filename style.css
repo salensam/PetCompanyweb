@@ -1,41 +1,5 @@
 :root {
-    color-scheme: light !important;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root, * {
-        color-scheme: light !important;
-    }
-    :root {
-        --clr-bg-main: #ffffff !important;
-        --clr-bg-alt: #FDF4F7 !important;
-        --clr-text-main: #333333 !important;
-        --clr-text-light: #666666 !important;
-        --clr-dark: #212121 !important;
-        --clr-white: #ffffff !important;
-        --clr-soft-pink: #FCE4EC !important;
-    }
-    
-    html, body {
-        background-color: var(--clr-bg-main) !important;
-        color: var(--clr-text-main) !important;
-    }
-    
-    /* Prevenir que el modo oscuro oculte o invierta imágenes */
-    img, picture, video, .hero-bg, .about-img, .spa-img {
-        filter: none !important;
-        mix-blend-mode: normal !important;
-        opacity: 1; 
-        -webkit-filter: none !important;
-    }
-    
-    /* Aseguramos que la opacidad de los elementos con animación .reveal se resuelva bien */
-    .reveal.active {
-        opacity: 1 !important;
-    }
-}
-
-:root {
+    color-scheme: light only;
     /* Pink Boutique Color Palette */
     --clr-primary: #E91E63; /* Intense Fuschia from logo */
     --clr-primary-hover: #C2185B;
@@ -254,7 +218,16 @@ img { max-width: 100%; height: auto; display: block; }
 .hero-overlay {
     position: absolute; top: 0; left: 0; width: 100%; height: 100%;
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3));
+    transition: background 0.3s ease;
 }
+
+/* Modo oscuro para la imagen del hero en iPhone/Android */
+@media (prefers-color-scheme: dark) {
+    .hero-overlay {
+        background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.7));
+    }
+}
+
 .hero-container { position: relative; z-index: 10; width: 100%; }
 .hero-content { max-width: 650px; margin-left: 5%; }
 .hero-title {
