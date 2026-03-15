@@ -1,5 +1,26 @@
 :root {
-    color-scheme: light only;
+    color-scheme: light !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light !important;
+        --clr-bg-main: #ffffff !important;
+        --clr-bg-alt: #FDF4F7 !important;
+        --clr-text-main: #333333 !important;
+        --clr-text-light: #666666 !important;
+        --clr-dark: #212121 !important;
+        --clr-white: #ffffff !important;
+        --clr-soft-pink: #FCE4EC !important;
+    }
+    
+    html, body {
+        background-color: var(--clr-bg-main) !important;
+        color: var(--clr-text-main) !important;
+    }
+}
+
+:root {
     /* Pink Boutique Color Palette */
     --clr-primary: #E91E63; /* Intense Fuschia from logo */
     --clr-primary-hover: #C2185B;
