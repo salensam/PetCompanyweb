@@ -3,8 +3,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root, * {
         color-scheme: light !important;
+    }
+    :root {
         --clr-bg-main: #ffffff !important;
         --clr-bg-alt: #FDF4F7 !important;
         --clr-text-main: #333333 !important;
@@ -17,6 +19,19 @@
     html, body {
         background-color: var(--clr-bg-main) !important;
         color: var(--clr-text-main) !important;
+    }
+    
+    /* Prevenir que el modo oscuro oculte o invierta imágenes */
+    img, picture, video, .hero-bg, .about-img, .spa-img {
+        filter: none !important;
+        mix-blend-mode: normal !important;
+        opacity: 1; 
+        -webkit-filter: none !important;
+    }
+    
+    /* Aseguramos que la opacidad de los elementos con animación .reveal se resuelva bien */
+    .reveal.active {
+        opacity: 1 !important;
     }
 }
 
