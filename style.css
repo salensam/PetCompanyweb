@@ -1,5 +1,5 @@
 :root {
-    color-scheme: light only;
+    color-scheme: light;
     /* Pink Boutique Color Palette */
     --clr-primary: #E91E63; /* Intense Fuschia from logo */
     --clr-primary-hover: #C2185B;
@@ -31,7 +31,7 @@
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; background-color: var(--clr-bg-main); }
 body {
     font-family: var(--font-body);
     font-size: 16px;
@@ -39,6 +39,19 @@ body {
     color: var(--clr-text-main);
     background-color: var(--clr-bg-main);
     overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Fuerza mantener colorimetría en Dark Mode */
+        --clr-bg-main: #ffffff;
+        --clr-bg-alt: #FDF4F7;
+        --clr-text-main: #333333;
+        --clr-text-light: #666666;
+        --clr-dark: #212121;
+        --clr-white: #ffffff;
+    }
 }
 
 h1, h2, h3, h4 {
